@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let  Temperature = function (doC) {
+        this.doC = doC;
+        this.setdoC = function (docC) {
+            this.doC = docC;
+        }
+         this.getdoCdoF = function () {
+             return (doC*1.8000) +32.00;
+         }
+         this.getdoCdoK = function () {
+             return doC + 273.15;
+         }
+      }
+      let  temperature =new Temperature(13);
+
+      let doCdoF = temperature.getdoCdoF();
+      let doCdoK = temperature.getdoCdoK();
+    alert("doCdoF:" + doCdoF + "doCdoK:" +doCdoK );
+
+
+          let (doF-32) + 273.15
+
+</script>
+</body>
+</html>
